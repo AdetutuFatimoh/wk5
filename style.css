@@ -71,7 +71,6 @@ section:nth-of-type(6){
 @media screen and (min-width:1080px) {    
 main{
     display: grid;
-    /* grid-template-columns: 300px 300px 300px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:repeat(3,300px);
     grid-template-areas: "a a b"
