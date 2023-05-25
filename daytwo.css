@@ -1,0 +1,190 @@
+@media screen and (max-width: 767px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas: "a"
+         "b" 
+         "c"
+          "d";
+        gap: 10px;
+        position: fixed;
+        z-index: -1;
+
+    }
+    nav{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.9;
+        text-transform: capitalize;
+        /* text-align: center; */
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1em;
+    }
+    li{
+        padding: 3em 0;
+        text-align: center;
+        width: 800%;
+    }
+    li:hover{
+    border-bottom: 10px solid red;
+    }
+    a{
+        color: tan;
+        text-decoration: none;
+    }
+    .small{
+        display: inline;
+    }
+    .big{
+        display: block;
+        text-align: center;
+    }
+    .big{
+        display: none;
+    }
+    div{
+        background: transparent;
+        border: 10px ridge green;
+    }
+    main :nth-child(1){
+        grid-area: a;
+    }
+    main :nth-child(2){
+        grid-area: b;
+    }
+    main :nth-child(3){
+        grid-area: c;
+    }
+    main :nth-child(4){
+        grid-area: d;
+    }
+}
+@media screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: "a b" 
+         "c d";
+        gap: 10px;
+    }
+    nav{
+        background-color: black;
+        text-transform: capitalize;
+    }
+    ul{
+        list-style-type: none;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1em;
+    }
+    li{
+        padding: 1em 0;
+        text-align: center;
+    }
+   
+    li:hover{
+    border-bottom: 10px solid red;
+    }
+
+    a{
+        color: yellow;
+        text-decoration: none;
+    }
+    .small{
+        display: none;
+    }
+    .big{
+        display: block;
+        text-align: center;
+    }
+    div{
+        background: green;
+    }
+    main :nth-child(1){
+        grid-area: a;
+    }
+    main :nth-child(2){
+        grid-area: b;
+    }
+    main :nth-child(3){
+        grid-area: c;
+    }
+    main :nth-child(4){
+        grid-area: d;
+    }
+}
+@media screen and (min-width: 1080px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-template-rows: repeat(4, 700px);
+        grid-template-areas: "a b c d";
+        gap: 10px;
+    }
+    nav{
+        height: 10vh;
+        background-color: blueviolet;
+        text-transform: capitalize;
+        /* text-align: center; */
+    }
+    ul{
+        list-style-type: none;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1em;
+    }
+    li{
+        padding: 1em 0;
+        text-align: center;
+        width: 800%;
+    }
+    li:hover{
+    border-bottom: 10px solid red;
+    }
+    a{
+        color: tan;
+        text-decoration: none; 
+    }
+    .small{
+        display: none;
+    }
+    .big{
+        display: block;
+        text-align: center;
+    }
+    div{
+        background: green;
+    }
+    main :nth-child(1){
+        grid-area: a;
+    
+    }
+    main :nth-child(2){
+        grid-area: b;
+    
+    }
+    main :nth-child(3){
+        grid-area: c;
+    }
+    main :nth-child(4){
+        grid-area: d;
+    }
+}

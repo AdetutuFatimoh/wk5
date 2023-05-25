@@ -120,6 +120,18 @@ main{
                             "a a a b";
   gap: 30px;
 }
+nav{
+    height: 5vh;
+    background-color: burlywood;
+    padding: 2em 0;}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1em;
+}
 
 article{
     border:15px ridge red;
@@ -151,11 +163,28 @@ article:nth-of-type(8){
 }
 article:nth-of-type(9){
     grid-area: i;
+    background: url(https://media.npr.org/assets/img/2023/05/01/2_some_like_it_hot_production_photos_october_2022_hr_credit_marc_j_franklin_wide-80070622445eb67295ce09f48b257dee436c3277.webp?s=1000);
+    background-repeat: no-repeat;
+    border: red;
+}
+a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 article:nth-of-type(10){
     grid-area: j;
+    background: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/E048/production/_129861475_87c7ce2124db9f8d7f332500d77c10042baaad67.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: red;
 }
 article:nth-of-type( 11){
     grid-area: k;
+    background: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/17C88/production/_129861479_gettyimages-164358921.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px  yellow;
 }
+
 }
